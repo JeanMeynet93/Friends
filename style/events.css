@@ -1,0 +1,229 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    font-size: x-large;
+    color: rgb(255, 156, 35);
+    position: relative;
+    left: 3%;
+}
+
+.lien-logo-header {
+    text-decoration: none;
+    color: rgb(255, 156, 35);
+}
+
+.ulist-header {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.link-list {
+    padding: 5%;
+    text-decoration: none;
+    color: rgb(255, 156, 35);
+}
+
+.container-event {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 156, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.wrap-content {
+    width: 90%;
+    height: 100%;
+}
+
+.box-details-event {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-event,
+.smile-event,
+.date-event {
+    margin: 3%;
+    padding: 0;
+}
+
+.date-event {
+    font-size: xx-large;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.book {
+    width: 35%;
+    height: 15%;
+    position: relative;
+    top: 5%;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.description-event {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-paragraph-details-event {
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 10% 0 5% 0;
+    padding: 0;
+}
+
+.paragraph-event {
+    text-align: center;
+    font-weight: bold;
+    margin: 3%;
+}
+
+footer {
+    width: 100%;
+    height: 8%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lien-icon-footer {
+    margin-left: 5%;
+}
+
+.icon-footer {
+    width: 35px;
+    height: 35px;
+}
+
+.box-iconfooter {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-logo-footer {
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-footer {
+    position: relative;
+    right: 8%;
+    color: rgb(255, 156, 35);
+}
+
+@media screen and (min-width: 767px) {
+
+    .container-event {
+        overflow-y: hidden;
+    }
+
+    .wrap-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .box-details-event {
+        width: 60%;
+        background-color: black;
+        border-radius: 5px;
+        margin-top: 5%;
+        height: 75%;
+    }
+
+    .title-event,
+    .smile-event {
+        margin: 0 0 5% 0;
+        padding: 0;
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+
+    .date-event {
+        background-color: rgb(255, 156, 35);
+        color: whitesmoke;
+    }
+
+    .book {
+        width: 35%;
+        height: 10%;
+        margin-top: 5%;
+        background-color: rgb(255, 156, 35);
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .book:hover {
+        width: 40%;
+        height: 10%;
+        font-size: 1.4rem;
+    }
+
+    .title-paragraph-details-event {
+        margin-top: 8%;
+        font-size: 3rem;
+    }
+
+    .paragraph-event {
+        margin: 0 10% 5% 10%;
+    }
+
+    .box-logo-footer {
+        width: 80%;
+    }
+
+    .box-iconfooter {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
